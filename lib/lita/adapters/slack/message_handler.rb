@@ -196,7 +196,7 @@ module Lita
 
         # Types of messages Lita should dispatch to handlers.
         def supported_message_subtypes
-          %w(me_message)
+          %w(bot_message me_message)
         end
 
         def supported_subtype?
