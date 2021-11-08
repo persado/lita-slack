@@ -641,7 +641,7 @@ describe Lita::Adapters::Slack::API do
     let(:http_status) { 200 }
     let(:stubs) do
       Faraday::Adapter::Test::Stubs.new do |stub|
-        stub.post('https://slack.com/api/rtm.start', token: token) do
+        stub.post('https://slack.com/api/rtm.connect', token: token) do
           [http_status, {}, http_response]
         end
       end
